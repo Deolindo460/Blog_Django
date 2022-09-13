@@ -1,0 +1,83 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>BlogTrip</title>
+</head>
+<body>
+    <div id="top">
+        <div class="top1">
+            <a href="/"><img class="logo" src="{% static 'imagens/blog.png' %}"></a>
+        </div>
+        <div class="top2">
+            <h2>Tornando suas trips em momentos inesquecíveis!</h2>
+        </div>
+    </div>
+    <div id="corpo">
+            <div class="cont1">
+                <div class="conteudo">
+                    <img class="fotos" src="{% static 'imagens/camping.jpg' %}">
+                </div>
+                <div class="conteudo2">
+                    <h2>Como acampar pela primeira vez?</h2>
+                    <p>Preparamos as melhores dicas para você não ficar na mão em seu primeiro acampamento de maneira simples, rápida e fácil...<a href="/camping/">Saiba mais.</a></p>
+                </div>
+            </div>
+            <div class="cont2">
+                <div class="conteudo">
+                    <img class="fotos" src="{% static 'imagens/mochila.jpg' %}">
+                </div>
+                <div class="conteudo2">
+                    <h2>Arrumando minha mochila para uma trilha ou acampamento</h2>
+                    <p>Ainda não sabe como organizar sua mochila para um acampamento? Leia esta matéria e descubra tudo o que você procura sobre mochilas...<a href="/mochila/">Saiba mais.</a></p>
+                </div>
+            </div>
+            <div class="cont3">
+                <div class="conteudo">
+                    <img class="fotos" src="{% static 'imagens/panela.jpg' %}">
+                </div>
+                <div class="conteudo2">
+                    <h2>Kit cozinha, o que levar para acampar.</h2>
+                    <p>Quer acampar sem ficar levando um monte de panelas e coisas desnecessárias? Saiba o que levar e porque nesta matéria...<a href="/cozinha/">Saiba mais.</a></p>
+                </div>
+            </div>
+            <div class="cont4">
+                <div class="conteudo">
+                    <img class="fotos" src="{% static 'imagens/pico.jpg' %}">
+                </div>
+                <div class="conteudo2">
+                    <h2>Buscando aventura? Venha conhecer sobre o pico paraná.</h2>
+                    <p>Se você busca aventura de verdade, venha conhecer o pico paraná, tenho certeza que você não vai se arrepender...<a href="/pico/">Saiba mais.</a></p>
+                </div>
+            </div>
+            <div class="cont5">
+                <div class="conteudo">
+                    <img class="fotos" src="{% static 'imagens/trilha.jpg' %}">
+                </div>
+                <div class="conteudo2">
+                    <h2>Em busca de uma trilha? Já ouviu falar de Corupá?</h2>
+                    <p>Se você curte cachoeiras e trilhas em meio a natureza, este é o lugar certo para você conhecer...<a href="/corupa/">Saiba mais.</a></p>
+                </div>
+            </div>
+    </div>
+</body>
+<footer>
+    <div class="controda">
+        <h4>O BlogTrip foi criado para ajudar a tornar a vida das pessoas que curtem trilhas e acampamentos muito mais fácil e descomplicada,
+             com matérias super interssantes e várias dicas, de maneira que o leitor entenda perfeitamente. Desperte o aventureiro que habita
+              em você e venha fazer parte deste grupo seleto de pessoas como você!</h4>
+    </div>
+    <div class="redes">
+        <h4>Blog desenvolvido por: Garbriel Deolindo da Silva e Ricardo Molinari Boos. Estudantes de Python do programa Entra-21.</h4>
+        <a href="https://www.linkedin.com/in/gabriel-deolindo-da-silva-856007187/" target="_blank"><img class="fotoicon" src="{% static 'imagens/gab.jpeg' %}"></a>
+        <a href="https://www.linkedin.com/in/ricardoboos/" target="_blank"><img class="fotoicon" src="{% static 'imagens/ric.jpeg' %}"></a>
+    </div>
+    <div class="rosa">
+        <img class="rv" src="{% static 'imagens/rosa.png' %}">
+    </div>
+</footer>
+</html>
