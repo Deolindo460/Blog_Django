@@ -7,4 +7,5 @@ urlpatterns = [
     path('cozinha/', views.cozinha),
     path('mochila/', views.mochila),
     path('pico/', views.pico),
+    path('postagens/', views.cadastropost),
 ]

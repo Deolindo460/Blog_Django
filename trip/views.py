@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
-
 def home(request):
     return render(request, 'trip/index.html')
 
@@ -20,3 +19,22 @@ def mochila(request):
 
 def pico(request):
     return render(request, 'trip/pico.html')
+
+
+def cadastropost(request):
+    if request.method == 'GET':
+        form = CadastroPostagem()
+        return render(request, "trip/pagina_postagem.html", {'form': form})
+    else:
+        form = CadastroPostagem(request.POST)
+        if form.is_valid():
+            cadastro = form.save()
+            form = CadastroPostagem()
+            return index(request)
+        else:
+            return render(request, "trip/pagina_postagem.html",{'form':form})
+
+
+def post(request):
+    return render(request, 'trip/pagina_postagem.html',
+                  {'postagem': postagem})

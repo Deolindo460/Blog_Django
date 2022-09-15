@@ -1,5 +1,6 @@
+/*{% load staticfiles %}*/
 body{
-    background-image: url("{{ static/imagens/fundo.jpeg }}");
+    background: url("../imagens/fundo.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
